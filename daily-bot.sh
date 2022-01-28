@@ -18,7 +18,7 @@ Pra alegrar o dia, segue um fato curioso sobre mim:
 - _${CHUCK_MESSAGE}_ 🥁 
 
 Bom trabalho pessoal.👊
-_Quer saber como isso funciona, <https://github.com/jfollmann/google-daily-bot|acesse o repo.>_\"}"
+_Quer saber como isso funciona? <https://github.com/jfollmann/google-daily-bot|acesse o repo.>_\"}"
 
 # Execute POST event to webhook
 curl --request POST \

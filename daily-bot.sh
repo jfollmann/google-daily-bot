@@ -10,7 +10,15 @@ BOT_URL='[ENTER_HERE_THE_INCOMMING_WEBHOOK_FROM_GOOGLE]'
 CHUCK_MESSAGE=$(curl https://api.chucknorris.io/jokes/random\?category\=dev | jq -r '.value')
 
 # Payload to send in webhook event
-MESSAGE="{\"text\": \"Bom dia <users/all>\n\n*Bora pra <DAILY_URL|daily>?*\n\nPra alegrar o dia, segue um fato curioso sobre mim:\n- _${CHUCK_MESSAGE}_ 🥁 \n\nBom trabalho pessoal.👊\"}"
+MESSAGE="{\"text\": \"Bom dia <users/all>
+
+*Bora pra <https://DAILY_URL|daily>?*
+
+Pra alegrar o dia, segue um fato curioso sobre mim:
+- _${CHUCK_MESSAGE}_ 🥁 
+
+Bom trabalho pessoal.👊
+_Quer saber como isso funciona, <https://github.com/jfollmann/google-daily-bot|acesse o repo.>_\"}"
 
 # Execute POST event to webhook
 curl --request POST \

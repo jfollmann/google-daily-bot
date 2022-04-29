@@ -1,4 +1,4 @@
-#!/bin/env zsh
+#!/bin/bash
 # Generate to random uuid to set THREAD_KEY in chat
 THREAD_KEY=$(cat /proc/sys/kernel/random/uuid)
 
